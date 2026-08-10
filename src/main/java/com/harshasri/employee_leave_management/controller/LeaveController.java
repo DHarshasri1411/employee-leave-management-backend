@@ -9,7 +9,7 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @RestController
-@CrossOrigin(origins = "*")
+
 public class LeaveController {
     private final LeaveService leaveService;
     @PostMapping("/leave/apply")
