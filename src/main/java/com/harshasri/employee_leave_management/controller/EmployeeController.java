@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 @RestController
 
 public class EmployeeController {
