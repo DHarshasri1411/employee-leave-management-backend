@@ -36,14 +36,15 @@ public Employee saveEmployee(@RequestBody Employee employee) {
         return employeeService.saveEmployee(employee);
     }
 
-    @PostMapping("/employees/login")
+@PostMapping("/employees/login")
 public Employee login(@RequestBody LoginRequest request) {
+
+    System.out.println("******** LOGIN API HIT ********");
 
     return employeeService.login(
             request.getEmployeeId(),
             request.getPassword()
     );
-
 }
 
  @GetMapping("/employees/{id}")
